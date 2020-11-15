@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+
+<div class="container">
+<% if (typeof rate !== 'undefined') { %> 
+<h2>Resulting rate: <%- rate %></h2>
+<% } %>
+
+
+<% if (typeof error !== 'undefined') { %> 
+<h2><%- error %></h2>
+<a class="btn" href="/">Try Again</a>
+<% } %>
+
+
+</div>
+
+</body>
+</html>

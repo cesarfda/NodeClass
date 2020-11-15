@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+
+<div class="container">
+<h2>Provide mail details</h2>
+<div class="alert alert-info" role="alert">
+  Stamped and meter must be 1 to 3 oz and flat and parcel must be between 1 and 13 oz.
+</div>
+<form method=GET action='results'>
+    <input placeholder='weight in ounces' name='weight'>
+    
+    <select name='type'>
+        <option value='stamped'>Stamped Letter</option>
+        <option value='metered'>Metered Letter</option>
+        <option value='flat'>Large Envelope</option>
+        <option value='parcel'>Parcel</option>
+    </select>
+    <input type=submit value="Get Rate">
+</form>
+
+</div>
+
+</body>
+</html>
